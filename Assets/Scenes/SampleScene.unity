@@ -256,6 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   goal: {fileID: 0}
+  gc: {fileID: 0}
 --- !u!1 &185317285
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,10 +485,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 888871939}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
 --- !u!1 &873205653
 GameObject:
@@ -594,35 +592,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &888871936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
-  m_PrefabInstance: {fileID: 735265302}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &888871938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
   m_PrefabInstance: {fileID: 735265302}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &888871939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!95 &888871940 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
+  m_PrefabInstance: {fileID: 735265302}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888871936}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e30fa959818884b42b34087e90f62b33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  speed: 10
-  speed_magnitude: 5
-  walkSpeed: 5
-  runSpeed: 10
-  walkSpeed_f: 0.5
-  runSpeed_f: 0.7
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,7 +717,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 738e7aa05e638ec4583b29b99ff7484a, type: 3}
   m_Name: 
@@ -941,7 +920,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1624430551}
   - component: {fileID: 1624430550}
-  - component: {fileID: 1624430552}
   m_Layer: 0
   m_Name: PlayerBody
   m_TagString: Untagged
@@ -956,13 +934,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624430549}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e30fa959818884b42b34087e90f62b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  speed: 0
+  animator: {fileID: 888871940}
   speed_magnitude: 5
   walkSpeed: 5
   runSpeed: 10
@@ -985,25 +962,6 @@ Transform:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1624430552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624430549}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e30fa959818884b42b34087e90f62b33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  speed: 3
-  speed_magnitude: 5
-  walkSpeed: 3
-  runSpeed: 5
-  walkSpeed_f: 0.5
-  runSpeed_f: 0.7
 --- !u!1001 &1656100604
 PrefabInstance:
   m_ObjectHideFlags: 0
